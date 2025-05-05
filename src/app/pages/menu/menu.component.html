@@ -1,0 +1,71 @@
+<header class="main-header">
+  <div class="logo">Páramo Presenta</div>
+
+  <div class="hamburger" (click)="toggleMenu()">
+    <i class="fas fa-bars"></i> 
+  </div>
+
+  <nav class="nav-links" [class.open]="menuOpen">
+    <a href="/retos" >RETOS</a>
+    <a routerLink="/ecopoints">ECOPOINTS</a>
+    <a routerLink="/canje">CANJE</a>
+    <a routerLink="/mapa">MAPA</a>
+  </nav>
+
+  <div class="login-dropdown" (click)="toggleDropdown()">
+    <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="Login" />
+    <div class="dropdown-menu" *ngIf="dropdownOpen">
+      <a routerLink="#">Iniciar sesión</a>
+      <a href="/registro">Registrarse</a>
+    </div>
+  </div>
+</header>
+<br><br>
+
+<!--<h1>Bienvenidos</h1>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="slides">
+        <ng-container *ngFor="let slide of slides; let i = index">
+          <div class="slide" id="slide-{{i+1}}">
+            <img [src]="slide.image" [alt]="slide.alt">
+            <div class="caption">{{slide.caption}}</div>
+          </div>
+        </ng-container>
+      </div>
+      
+      <div class="carousel-nav">
+        <ng-container *ngFor="let slide of slides; let i = index">
+          <a href="#slide-{{i+1}}" class="nav-dot"></a>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="contenedor_compromiso">
+    <div class="titulo">
+    Proyecto <br> Kera-Naidi 🌱
+    </div>
+  
+    <div class="texto">
+      <h2 class="subtitulo">PÁRAMO PRESENTA</h2>
+      <p>
+        Nuestro compromiso va más allá de crear experiencias inolvidables, buscamos inspirar una cultura de 
+        <span class="destacado">sostenibilidad</span> en cada concierto y festival que organicemos. Desde la reducción del uso del plástico, hasta sistemas de reciclaje eficientes, uso de energías limpias y campañas de concientización.
+      </p>
+      <p>
+        Trabajamos activamente para que cada nota, también sea un acto por el planeta.
+      </p>
+      <p class="destacado">
+        ¡SÚMATE A UNA NUEVA ERA DE ENTRETENIMIENTO CONSCIENTE..!
+      </p>
+      <button class="boton-ver-mas">Ver más</button>
+    </div>
+
+  </div>-->
+  
+
+  
+
+  
