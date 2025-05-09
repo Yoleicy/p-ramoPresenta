@@ -1,4 +1,6 @@
 import { Routes } from '@angular/router';
+import { LoginComponent } from './pages/login/login.component';
+import { RegistroComponent } from './pages/registro/registro.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { CanjeComponent } from './pages/canje/canje.component';
@@ -10,6 +12,8 @@ import { FooterComponent } from './pages/footer/footer.component';
 
 export const routes: Routes = [
     {path: '', component: InicioComponent},
+     { path: 'registro', component: RegistroComponent },
+    { path: 'login', component: LoginComponent },
     { path: 'menu', component: MenuComponent },
     { path: 'canje', component: CanjeComponent },
     { path: 'retos', component: RetosComponent },
