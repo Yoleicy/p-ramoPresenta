@@ -1,1 +1,25 @@
-<p>perfil works!</p>
+<body class="flex flex-col min-h-screen text-center p-5 pb-24 bg-gray-100">
+
+    <main class="flex-1">
+      <h1 class="text-4xl mb-12">Perfil de usuario</h1>
+  
+      <div class="flex justify-center mb-12">
+        <div class="relative w-32 h-32 border-2 border-black overflow-hidden rounded-full cursor-pointer">
+          <img id="profileImage" class="w-full h-full object-cover" src="https://via.placeholder.com/150" />
+        </div>
+      </div>
+  
+      <div class="mx-auto mt-10 mb-5 max-w-md border-2 border-black p-8 rounded-lg bg-white text-black text-left">
+        <p class="mb-5 text-xl"><strong>Nombre completo:</strong> <span id="displayName">-</span></p>
+        <p class="mb-5 text-xl"><strong>Correo electrónico:</strong> <span id="displayEmail">-</span></p>
+        <p class="mb-5 text-xl"><strong>Ecopoints:</strong> <span id="displayPoints">-</span></p>
+      </div>
+  
+      <!-- Botón para volver a editar el perfil -->
+      <div class="mt-8">
+        <button onclick="window.location.href='usuario.html'"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow">
+          Editar mi perfil
+        </button>
+      </div>
+    </main>

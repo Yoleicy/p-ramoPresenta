@@ -8,6 +8,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './inicio.component.css'
 })
 export class InicioComponent {
+ 
+  
   slides = [
     { 
       id: 1, 
@@ -35,4 +37,7 @@ export class InicioComponent {
     }
 
   ]
-}
+
+  
+};
+
