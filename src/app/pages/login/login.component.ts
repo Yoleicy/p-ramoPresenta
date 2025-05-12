@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,15 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
- loginForm: FormGroup;
+dropdownOpen: any;
+menuOpen: any;
+toggleMenu() {
+throw new Error('Method not implemented.');
+}
+toggleDropdown() {
+throw new Error('Method not implemented.');
+}
+  loginForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
     this.loginForm = this.fb.group({
